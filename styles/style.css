@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .visually-hidden {
@@ -60,12 +63,6 @@ ol {
   background-color: #D9D9D9;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content {
   display: flex;
   max-width: 1140px;
@@ -81,6 +78,10 @@ ol {
 .content__list-container {
   height: 298px;
   overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .content__details {
@@ -108,13 +109,6 @@ ol {
   flex-direction: column;
   gap: 30px;
   width: 390px;
-}
-
-.content__list-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .content__video-card {
